@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import './bootstrap.min.css';
 
-body { margin: 0; }
+body { margin: 0; height: 100%; width: 100%; background: lightgray;}
+html { margin: 0; height: 100%; width: 100%; }
+button:focus { border: none; }

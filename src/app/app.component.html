@@ -1,107 +1,85 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="https://www.google.com/logos/doodles/2018/raja-ram-mohan-roys-246th-birthday-6033106313150464.3-l.png">
-</div>
-
-<h3>Basic Buttons</h3>
-<div class="button-row">
-  <button mat-button>Basic</button>
-  <button mat-button color="primary">Primary</button>
-  <button mat-button color="accent">Accent</button>
-  <button mat-button color="warn">Warn</button>
-  <button mat-button disabled>Disabled</button>
-  <a mat-button routerLink=".">Link</a>
-</div>
-
-<h3>Raised Buttons</h3>
-<div class="button-row">
-  <button mat-raised-button>Basic</button>
-  <button mat-raised-button color="primary">Primary</button>
-  <button mat-raised-button color="accent">Accent</button>
-  <button mat-raised-button color="warn">Warn</button>
-  <button mat-raised-button disabled>Disabled</button>
-  <a mat-raised-button routerLink=".">Link</a>
-</div>
-
-<h3>Icon Buttons</h3>
-<div class="button-row">
-  <button mat-icon-button>
-    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </button>
-  <button mat-icon-button color="primary">
-    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </button>
-  <button mat-icon-button color="accent">
-    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </button>
-  <button mat-icon-button color="warn">
-    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </button>
-  <button mat-icon-button disabled>
-    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </button>
-</div>
-
-<h3>Fab Buttons</h3>
-<div class="button-row">
-  <button mat-fab>Basic</button>
-  <button mat-fab color="primary">Primary</button>
-  <button mat-fab color="accent">Accent</button>
-  <button mat-fab color="warn">Warn</button>
-  <button mat-fab disabled>Disabled</button>
-  <button mat-fab>
-    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </button>
-  <a mat-fab routerLink=".">Link</a>
-</div>
-
-<h3>Mini Fab Buttons</h3>
-<div class="button-row">
-  <button mat-mini-fab>Basic</button>
-  <button mat-mini-fab color="primary">Primary</button>
-  <button mat-mini-fab color="accent">Accent</button>
-  <button mat-mini-fab color="warn">Warn</button>
-  <button mat-mini-fab disabled>Disabled</button>
-  <button mat-mini-fab>
-    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </button>
-  <a mat-mini-fab routerLink=".">Link</a>
-</div>
-
-
-<div class="row" style="margin: 30px">
-  <div class="col">
-    <div ngbDropdown class="d-inline-block">
-      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
-      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-        <button class="dropdown-item">Action - 1</button>
-        <button class="dropdown-item">Another Action</button>
-        <button class="dropdown-item">Something else is here</button>
+<mat-toolbar color="primary" fxLayout="row" style="position: fixed; top: 0; z-index: 1;">
+  <div style="height: 100%; width: 100%; background: red"></div>
+  <div style="height: 100%; width: 100%; background: yellow"></div>
+  <div style="height: 100%; width: 100%; background: green"></div>
+</mat-toolbar>
+<div style="height: 100%; width: 100%;">
+  <div style="padding-top: 64px;"></div>
+  <div style="height: 7%; width: 100%;" fxLayout="row">
+    <div style="height: 100%; width: 100%; padding-left: 20px;" fxLayoutAlign="start center" fxLayoutGap="10px">
+      <div>
+        <button mat-button [matMenuTriggerFor]="menu"> Menu
+          <mat-icon style="font-size: 20px; padding-top: 2px">keyboard_arrow_down</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+        </mat-menu>
       </div>
+      <div>
+        <button mat-button [matMenuTriggerFor]="menu"> Menu2
+          <mat-icon style="font-size: 20px; padding-top: 2px">keyboard_arrow_down</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+        </mat-menu>
+      </div>
+      <div>
+        <button mat-button [matMenuTriggerFor]="menu"> Menu3
+          <mat-icon style="font-size: 20px; padding-top: 2px">keyboard_arrow_down</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+        </mat-menu>
+      </div>
+      <div>
+        <button mat-button [matMenuTriggerFor]="menu"> Menu4
+          <mat-icon style="font-size: 20px; padding-top: 2px">keyboard_arrow_down</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+        </mat-menu>
+      </div>
+      <div>
+        <button mat-button [matMenuTriggerFor]="menu"> Menu5
+          <mat-icon style="font-size: 20px; padding-top: 2px">keyboard_arrow_down</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+        </mat-menu>
+      </div>
+      <div>
+        <button mat-button [matMenuTriggerFor]="menu"> Menu6
+          <mat-icon style="font-size: 20px; padding-top: 2px">keyboard_arrow_down</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+        </mat-menu>
+      </div>
+    </div>
+    <div fxFlex="20%" style="height: 100%; width: 100%; padding-right: 20px" fxLayoutAlign="end center" fxLayout="row">
+      <button mat-raised-button color="primary">24/7 Emergency Call</button>
     </div>
   </div>
 
+  <div>
+    <app-corasal></app-corasal>
+  </div>
 
-  <div class="col text-right">
-    <div ngbDropdown placement="top-right" class="d-inline-block">
-      <button class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>Toggle dropup</button>
-      <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
-        <button class="dropdown-item">Action - 1</button>
-        <button class="dropdown-item">Another Action</button>
-        <button class="dropdown-item">Something else is here</button>
-      </div>
-    </div>
+  <div style="padding-top: 30px; margin: 30px 10%;">
+    <app-tiles></app-tiles>
+  </div>
+
+  <div style="margin: 60px 10%;">
+    <app-how-we-assist></app-how-we-assist>
+  </div>
+
+  <div style="margin: 0px 10%;">
+    <app-what-we-do></app-what-we-do>
   </div>
 </div>
-
-
-<mat-card style="height: 500px; width: 500px; background: red; margin: 30px" fxLayout="row" fxLayoutGap="20px">
-  <div fxFlex style="height: 100%; width: 100%; background: yellow" fxLayout="column" fxLayoutGap="20px">
-    <div fxFlex style="height: 100%; width: 100%; background: grey"></div>
-    <div fxFlex style="height: 100%; width: 100%; background: blue"></div>
-  </div>
-  <div fxFlex style="height: 100%; width: 100%; background: green"></div>
-</mat-card>

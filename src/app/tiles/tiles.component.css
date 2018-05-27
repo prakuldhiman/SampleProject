@@ -1,0 +1,11 @@
+.dimention {
+    height: 110px;
+    width: 110px;
+}
+
+.title {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 35px;
+}

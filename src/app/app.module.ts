@@ -12,10 +12,18 @@ import 'hammerjs';
 
 // Components
 import { AppComponent } from './app.component';
+import { CorasalComponent } from './corasal/corasal.component';
+import { TilesComponent } from './tiles/tiles.component';
+import { HowWeAssistComponent } from './how-we-assist/how-we-assist.component';
+import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CorasalComponent,
+    TilesComponent,
+    HowWeAssistComponent,
+    WhatWeDoComponent
   ],
   imports: [
     NgbModule.forRoot(),

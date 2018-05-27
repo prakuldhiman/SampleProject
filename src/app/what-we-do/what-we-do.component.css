@@ -1,0 +1,13 @@
+.title {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.tile{
+    height: 300px;
+    width: 33.33%;
+    border: 2px solid black;
+}
