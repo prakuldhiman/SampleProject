@@ -1,3 +1,13 @@
 h1{
     color: grey;
 }
+
+.headerCenter {
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.headerCenter:hover {
+    color: lightgray;
+}

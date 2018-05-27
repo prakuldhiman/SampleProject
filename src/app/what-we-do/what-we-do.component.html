@@ -1,6 +1,10 @@
-<mat-card style="height: 100%; width: 100%;" fxLayout="column">
+<div style="height: 100%; width: 100%;" fxLayout="column">
   <div class="title" fxLayoutAlign="center center">WHAT WE DO</div>
   <div style="height: 100%; width: 100%; margin-top: 20px;" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
-    <div *ngFor="let box of boxes; let i=index" class="tile" fxLayoutAlign="center center">{{box}}</div>
+    <div *ngFor="let box of boxes; let i=index" class="tile" fxLayoutAlign="start center" fxLayout="column" fxLayoutGap="20px">
+      <img style="height: 40%; width: 100%;;" src="{{box.imageUrl}}" alt="">
+      <div><b>{{box.title}}</b></div>
+      <div>{{box.info}}</div>
+    </div>
   </div>
-</mat-card>
+</div>

@@ -1,11 +1,22 @@
-<mat-toolbar color="primary" fxLayout="row" style="position: fixed; top: 0; z-index: 1;">
-  <div style="height: 100%; width: 100%; background: red"></div>
-  <div style="height: 100%; width: 100%; background: yellow"></div>
-  <div style="height: 100%; width: 100%; background: green"></div>
+<mat-toolbar fxLayout="row" style="position: fixed; top: 0; z-index: 1; background: #192C47">
+  <div fxFlex="20%" style="height: 100%; width: 100%;"></div>
+  <div fxFlex style="height: 100%; width: 100%; padding: 10px 10px 0 10px;" fxLayout="row" fxLayoutAlign="start end" fxLayoutGap="30px">
+    <div class="headerCenter">Today's Deal</div>
+    <div class="headerCenter">Customer Services</div>
+    <div class="headerCenter">About Us</div>
+    <div class="headerCenter">Shop</div>
+    <div class="headerCenter">Contact Us</div>
+  </div>
+  <div fxFlex="20%" style="height: 100%; width: 100%; padding: 10px 10px 0 10px;" fxLayout="row" fxLayoutAlign="start end"
+    fxLayoutGap="30px">
+    <div class="headerCenter">Login/SignUp</div>
+    <div class="headerCenter">Cart</div>
+    <div class="headerCenter">Wishlist</div>
+  </div>
 </mat-toolbar>
 <div style="height: 100%; width: 100%;">
   <div style="padding-top: 64px;"></div>
-  <div style="height: 7%; width: 100%;" fxLayout="row">
+  <div style="height: 4%; width: 100%;" fxLayout="row">
     <div style="height: 100%; width: 100%; padding-left: 20px;" fxLayoutAlign="start center" fxLayoutGap="10px">
       <div>
         <button mat-button [matMenuTriggerFor]="menu"> Menu
@@ -71,7 +82,7 @@
     <app-corasal></app-corasal>
   </div>
 
-  <div style="padding-top: 30px; margin: 30px 10%;">
+  <div style="padding-top: 30px; margin: 30px 10%;" fxLayoutAlign="center center">
     <app-tiles></app-tiles>
   </div>
 
@@ -81,5 +92,9 @@
 
   <div style="margin: 0px 10%;">
     <app-what-we-do></app-what-we-do>
+  </div>
+
+  <div style="margin: 60px 0 0 0;">
+    <app-footer></app-footer>
   </div>
 </div>
