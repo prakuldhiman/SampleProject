@@ -72,7 +72,7 @@
 </div>
 
 
-<div class="row">
+<div class="row" style="margin: 30px">
   <div class="col">
     <div ngbDropdown class="d-inline-block">
       <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
@@ -96,3 +96,12 @@
     </div>
   </div>
 </div>
+
+
+<mat-card style="height: 500px; width: 500px; background: red; margin: 30px" fxLayout="row" fxLayoutGap="20px">
+  <div fxFlex style="height: 100%; width: 100%; background: yellow" fxLayout="column" fxLayoutGap="20px">
+    <div fxFlex style="height: 100%; width: 100%; background: grey"></div>
+    <div fxFlex style="height: 100%; width: 100%; background: blue"></div>
+  </div>
+  <div fxFlex style="height: 100%; width: 100%; background: green"></div>
+</mat-card>
