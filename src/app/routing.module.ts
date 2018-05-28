@@ -1,3 +1,6 @@
+import { ProductsComponent } from './products/products.component';
+import { ServicesComponent } from './services/services.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -7,8 +10,11 @@ const routes: Routes = [
     //     path: 'user',
     //     loadChildren: 'app/modules/user-module/user.module#UserModule'
     // },
-
-    { path: '**', redirectTo: '/user' }
+    { path: '', component: DashboardComponent },
+    { path: 'dashboard', component: DashboardComponent },
+    { path: 'service', component: ServicesComponent },
+    { path: 'product', component: ProductsComponent },
+    { path: '**', redirectTo: '/dashboard' },
 ];
 
 @NgModule({

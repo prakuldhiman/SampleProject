@@ -1,6 +1,7 @@
 .dimention {
     height: 110px;
     width: 110px;
+    cursor: pointer;
 }
 
 .title {

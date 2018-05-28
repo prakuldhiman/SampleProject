@@ -1,0 +1,67 @@
+<div style="width: 100%; padding: 50px 100px 0px 100px" fxLayout="row" fxLayoutGap="50px">
+  <div fxFlex style="width: 100%; padding: 0; background: lightgray">
+    <mat-toolbar fxLayoutAlign="center center" style="height:50px; background: #426DA9; color: white">
+      ELECTRICAL SERVICES
+    </mat-toolbar>
+
+    <div style="height: 100%; width: 100%;">
+      <mat-accordion>
+        <mat-expansion-panel *ngFor="let panel of panelData; let i=index">
+          <mat-expansion-panel-header>
+            <mat-panel-title fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="start center">
+              <img style="height: 35px; width: 35px;" src="{{panel.titleIcon}}" alt="">
+              <div style="font-size: 16px;">{{panel.title}}</div>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <div style="padding-left:45px;">
+            <mat-nav-list fxLayoutAlign="start center" fxLayout="row" *ngFor="let listData of panel.listData; let j=index" style="padding: 0">
+              <mat-icon style="font-size:17px; padding-top: 3px">radio_button_checked</mat-icon>
+              <mat-list-item style="width: 100%; height: 40px;">{{listData}}</mat-list-item>
+            </mat-nav-list>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+
+  <mat-card fxFlex="40%" style=" height: 514px; width: 100%; padding: 0">
+    <mat-toolbar fxLayoutAlign="center center" style="height:50px; background: #426DA9; color: white">
+      CONTACT
+    </mat-toolbar>
+
+    <div style="margin-top: 30px" fxLayoutAlign="center center">
+      <img style="height: 180px; width: 150px; border: 1px solid black" src="" alt="">
+    </div>
+
+    <div style="margin: 30px 0" fxLayoutAlign="center center" fxLayout="column">
+      <div style="font-size: 18px">dhiman404prakul@gmail.com</div>
+      <div style="font-size: 25px">
+        <b>94xxxxx41</b>
+      </div>
+    </div>
+
+    <mat-toolbar style="height: 130px; padding: 10px; background: #426DA9; color: white" fxLayout="row">
+      <div fxFlex="25%" class="footerTile" fxLayout="column" fxLayoutAlign="start center">
+        <img style="height: 50px; width: 50px;" src="../../assets/Tile/power-cord.png" alt="">
+        <span style="margin-top: 5px;">Verified</span>
+        <span style="margin-top: -10px;">Professionals</span>
+      </div>
+      <div fxFlex="25%" class="footerTile" fxLayout="column" fxLayoutAlign="start center">
+        <img style="height: 50px; width: 50px;" src="../../assets/Tile/power-cord.png" alt="">
+        <span style="margin-top: 5px;">Timly Work</span>
+        <!-- <span style="margin-top: -10px;">Work</span> -->
+      </div>
+      <div fxFlex="25%" class="footerTile" fxLayout="column" fxLayoutAlign="start center">
+        <img style="height: 50px; width: 50px;" src="../../assets/Tile/power-cord.png" alt="">
+        <span style="margin-top: 5px;">Guaranteed</span>
+        <span style="margin-top: -10px;">Satisfaction</span>
+      </div>
+      <div fxFlex="25%" class="footerTile" fxLayout="column" fxLayoutAlign="start center">
+        <img style="height: 50px; width: 50px;" src="../../assets/Tile/power-cord.png" alt="">
+        <span style="margin-top: 5px;">Always</span>
+        <span style="margin-top: -10px;">OnTime</span>
+      </div>
+    </mat-toolbar>
+  </mat-card>
+</div>

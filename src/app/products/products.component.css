@@ -1,0 +1,14 @@
+.footerTile {
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 13px;
+}
+
+.productClass{
+    height: 400px;
+    width: 229px;
+    margin-right: 6px;
+    margin-top: 8px;
+    padding: 0;
+}

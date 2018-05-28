@@ -3,28 +3,30 @@
     <div class="title" fxLayoutAlign="center center">SERVICES</div>
 
     <div style="height: 100%; width: 100%;" fxLayout="row">
-      <div class="dimention" style="background: white; color: #192C47; font-size: 14px;" fxLayoutAlign="center center" fxLayout="column">
-        <img style="height: 40px; width: 40px;" src="../../assets/Tile/power-cord.png" alt="">
-        <span style="margin-top: 7px">Electrical</span>
-        <span style="margin-top: -5px;">Sevices</span>
+      <div class="dimention" style="background: white; color: #192C47; font-size: 14px;" fxLayoutAlign="center center" fxLayout="column"
+        *ngFor="let line of services.coloum1; let j=index" (click)="goToServicePage(line, j)">
+        <img style="height: 40px; width: 40px;" src="{{line.imageUrl}}" alt="">
+        <span style="margin-top: 2px; padding: 5px; display:table-caption; text-align: center; line-height:14px;">{{line.data}}</span>
+        <!-- <span style="margin-top: -5px;">Sevices</span> -->
       </div>
-      <div class="dimention" style="background: green"></div>
-      <div class="dimention" style="background: grey"></div>
-      <div class="dimention" style="background: yellow"></div>
     </div>
 
     <div style="height: 100%; width: 100%;" fxLayout="row">
-      <div class="dimention" style="background: grey"></div>
-      <div class="dimention" style="background: red"></div>
-      <div class="dimention" style="background: yellow"></div>
-      <div class="dimention" style="background: green"></div>
+      <div class="dimention" style="background: white; color: #192C47; font-size: 14px;" fxLayoutAlign="center center" fxLayout="column"
+        *ngFor="let line of services.coloum2; let j=index" (click)="goToServicePage(line, j)">
+        <img style="height: 40px; width: 40px;" src="{{line.imageUrl}}" alt="">
+        <span style="margin-top: 2px; padding: 5px; display:table-caption; text-align: center; line-height:14px;">{{line.data}}</span>
+        <!-- <span style="margin-top: -5px;">Sevices</span> -->
+      </div>
     </div>
 
     <div style="height: 100%; width: 100%;" fxLayout="row">
-      <div class="dimention" style="background: yellow"></div>
-      <div class="dimention" style="background: grey"></div>
-      <div class="dimention" style="background: green"></div>
-      <div class="dimention" style="background: red"></div>
+      <div class="dimention" style="background: white; color: #192C47; font-size: 14px;" fxLayoutAlign="center center" fxLayout="column"
+        *ngFor="let line of services.coloum3; let j=index" (click)="goToServicePage(line, j)">
+        <img style="height: 40px; width: 40px;" src="{{line.imageUrl}}" alt="">
+        <span style="margin-top: 2px; padding: 5px; display:table-caption; text-align: center; line-height:14px;">{{line.data}}</span>
+        <!-- <span style="margin-top: -5px;">Sevices</span> -->
+      </div>
     </div>
   </mat-card>
 
@@ -33,25 +35,31 @@
   <mat-card style="height: 100%; width: 100%; padding: 5px" fxLayout="column">
     <div class="title" fxLayoutAlign="center center">PRODUCTS</div>
 
-    <div style="height: 100%; width: 100%;" fxLayout="row" fxLayoutAlign="center center">
-      <div class="dimention" style="background: red"></div>
-      <div class="dimention" style="background: green"></div>
-      <div class="dimention" style="background: grey"></div>
-      <div class="dimention" style="background: yellow"></div>
+    <div style="height: 100%; width: 100%;" fxLayout="row">
+      <div class="dimention" style="background: white; color: #192C47; font-size: 14px;" fxLayoutAlign="center center" fxLayout="column"
+        *ngFor="let line of products.coloum1; let j=index" (click)="goToProductPage(line, j)">
+        <img style="height: 40px; width: 40px;" src="{{line.imageUrl}}" alt="">
+        <span style="margin-top: 2px; padding: 5px; display:table-caption; text-align: center; line-height:14px;">{{line.data}}</span>
+        <!-- <span style="margin-top: -5px;">Sevices</span> -->
+      </div>
     </div>
 
-    <div style="height: 100%; width: 100%;" fxLayout="row" fxLayoutAlign="center center">
-      <div class="dimention" style="background: grey"></div>
-      <div class="dimention" style="background: red"></div>
-      <div class="dimention" style="background: yellow"></div>
-      <div class="dimention" style="background: green"></div>
+    <div style="height: 100%; width: 100%;" fxLayout="row">
+      <div class="dimention" style="background: white; color: #192C47; font-size: 14px;" fxLayoutAlign="center center" fxLayout="column"
+        *ngFor="let line of products.coloum2; let j=index" (click)="goToProductPage(line, j)">
+        <img style="height: 40px; width: 40px;" src="{{line.imageUrl}}" alt="">
+        <span style="margin-top: 2px; padding: 5px; display:table-caption; text-align: center; line-height:14px;">{{line.data}}</span>
+        <!-- <span style="margin-top: -5px;">Sevices</span> -->
+      </div>
     </div>
 
-    <div style="height: 100%; width: 100%;" fxLayout="row" fxLayoutAlign="center center">
-      <div class="dimention" style="background: yellow"></div>
-      <div class="dimention" style="background: grey"></div>
-      <div class="dimention" style="background: green"></div>
-      <div class="dimention" style="background: red"></div>
+    <div style="height: 100%; width: 100%;" fxLayout="row">
+      <div class="dimention" style="background: white; color: #192C47; font-size: 14px;" fxLayoutAlign="center center" fxLayout="column"
+        *ngFor="let line of products.coloum3; let j=index" (click)="goToProductPage(line, j)">
+        <img style="height: 40px; width: 40px;" src="{{line.imageUrl}}" alt="">
+        <span style="margin-top: 2px; padding: 5px; display:table-caption; text-align: center; line-height:14px;">{{line.data}}</span>
+        <!-- <span style="margin-top: -5px;">Sevices</span> -->
+      </div>
     </div>
   </mat-card>
 </div>

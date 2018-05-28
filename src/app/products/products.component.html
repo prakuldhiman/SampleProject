@@ -1,0 +1,21 @@
+<div style="width: 100%; padding: 50px 85px 0px 85px" fxLayoutGap="50px">
+  <div fxFlex style="width: 100%; padding: 0; background: lightgray">
+    <mat-toolbar fxLayoutAlign="center center" style="height:50px; background: #426DA9; color: white">
+      GENERATORS
+    </mat-toolbar>
+
+    <div style="height: 100%; width: 100%; padding: 7px 0 0 0;" fxLayout="row wrap">
+      <mat-card class="productClass" *ngFor="let card of productCard; let i=index;" fxLayout="column">
+        <div fxFlex style="height: 100%; width: 100%;">
+          <img style="height: 280px; width: 229px;" src="{{card.imageUrl}}" alt="">
+        </div>
+        <div fxFlex="18%" style="height: 100%; width: 100%; font-size: 13px; word-break: break-all; padding: 5px 10px 5px 10px; font-family: Arial, Helvetica, sans-serif;">
+          <b>{{card.productData}}</b>
+        </div>
+        <div fxFlex="12%" style="height: 100%; width: 100%; font-size: 18px; padding-right: 20px; font-family: Arial, Helvetica, sans-serif" fxLayoutAlign="end center">
+          <b>{{card.price | currency: '&#8377;'}}</b>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

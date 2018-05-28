@@ -17,6 +17,9 @@ import { TilesComponent } from './tiles/tiles.component';
 import { HowWeAssistComponent } from './how-we-assist/how-we-assist.component';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { FooterComponent } from './footer/footer.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ServicesComponent } from './services/services.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { FooterComponent } from './footer/footer.component';
     TilesComponent,
     HowWeAssistComponent,
     WhatWeDoComponent,
-    FooterComponent
+    FooterComponent,
+    DashboardComponent,
+    ServicesComponent,
+    ProductsComponent
   ],
   imports: [
     NgbModule.forRoot(),
